@@ -145,8 +145,22 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
 }
 
+#header-others {
+  height: 90px;
+  padding: 25px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background: rgba(6, 12, 34, 0.98);
+  height: 70px;
+  padding: 15px 0;
+}
+
 @media (max-width: 991px) {
-  #header {
+  #header, #header-others {
     background: rgba(6, 12, 34, 0.98);
     height: 70px;
     padding: 15px 0;
@@ -155,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1199px) {
-  #header .container {
+  #header .container , #header-others .container{
     max-width: 100%;
   }
 }
@@ -167,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 
-#header #logo h1 {
+#header #logo h1, #header-others #logo h1 {
   font-size: 36px;
   margin: 0;
   padding: 6px 0;
@@ -178,15 +192,15 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header #logo h1 span {
+#header #logo h1 span, #header-others #logo h1 span {
   color: #f82249;
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
+#header #logo h1 a, #header #logo h1 a:hover, #header-others #logo h1 a, #header-others #logo h1 a:hover {
   color: #fff;
 }
 
-#header #logo img {
+#header #logo img, #header-others #logo img {
   padding: 0;
   margin: 0;
   max-height: 40px;
