@@ -157,7 +157,11 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(6, 12, 34, 0.98);
   height: 70px;
   padding: 15px 0;
+<<<<<<< HEAD
   margin-bottom: 100px;
+=======
+  /* margin-bottom: 100px ; */
+>>>>>>> 626b4c49f9f0d51e6d1d029b0310a68f565ff00a
 }
 
 @media (max-width: 991px) {
