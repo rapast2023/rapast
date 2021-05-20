@@ -157,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(6, 12, 34, 0.98);
   height: 70px;
   padding: 15px 0;
+  /* margin-bottom: 100px ; */
 }
 
 @media (max-width: 991px) {
