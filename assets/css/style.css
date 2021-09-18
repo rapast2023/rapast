@@ -38,6 +38,33 @@ h1, h2, h3, h4, h5, h6 {
   color: #0e1b4d;
 }
 
+button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background: #f82249;
+  color: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+
+.buttons-grp{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .buttons-grp {
+    flex-direction: column;
+  }
+}
+
 .main-page {
   margin-top: 70px;
 }
@@ -633,7 +660,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0;
 }
 
-#intro .about-btn {
+.about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -650,7 +677,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #f82249;
 }
 
-#intro .about-btn:hover {
+.about-btn:hover {
   background: #f82249;
   color: #fff;
 }
@@ -747,6 +774,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f82249;
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Topics of Interest Section
+--------------------------------------------------------------*/
+
+#topics-of-interest ul{
+  list-style: none;
+}
+
+#topics-of-interest ul li::before {
+  content: "\2022";
+  color: #f82249;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  /* margin-left: 1em; */
+}
+
+@media (max-width: 960px) {
+  #topics-of-interest .topic{
+    margin-top: 20px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Speakers Section
