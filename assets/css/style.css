@@ -320,6 +320,15 @@ button {
   outline: none;
 }
 
+.nav-menu .dropdown a{
+  display: block;
+  color: black;
+  font-weight: 400;
+}
+
+.nav-menu .dropdown a:hover{
+  color: #f82249;
+}
 @media (max-width: 1199px) {
   .nav-menu a {
     padding: 8px 4px;
@@ -783,11 +792,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Topics of Interest Section
 --------------------------------------------------------------*/
 
-#topics-of-interest ul{
+#topics-of-interest ul, .bullets ul{
   list-style: none;
 }
 
-#topics-of-interest ul li::before {
+#topics-of-interest ul li::before, .bullets ul li::before {
   content: "\2022";
   color: #f82249;
   font-weight: bold;
