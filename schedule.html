@@ -43,23 +43,49 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#intro">The<span>Event</span></a></h1>-->
-        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+        <a href="index.html" class="scrollto">
+          <img src="assets/img/logo.png" alt="" title="">
+        </a>
       </div>
 
       <nav id="nav-menu-container">
-        <ul class="nav-menu">
+        <ul class="nav-menu" >
           <li><a href="index.html">Home</a></li>
-          <li><a href="organizers.html">Committee</a></li>
-          <li><a href="calls.html">Calls</a></li>
+          <li>
+            <div class="dropdown show">
+              <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgba(202, 206, 221, 0.8); font-weight: 600;">
+                Organization
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="organizingCommittee.html">Organising Committe</a>
+                <a class="dropdown-item" href="programCommittee.html">Program Committee</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown show">
+              <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgba(202, 206, 221, 0.8); font-weight: 600;">
+                Calls
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="schedule.html">Important Dates</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="callForPapers.html">Call for papers</a>
+                <a class="dropdown-item" href="callForWorkshop.html">Call for workshops</a>
+                <a class="dropdown-item" href="callForTutorial.html">Call for tutorials</a>
+                <a class="dropdown-item" href="callForDemo.html">Call for demo and posters</a>
+                <a class="dropdown-item" href="callForPhD.html">Call for PhD symposium</a>
+              </div>
+            </div>
+          </li>
           <li><a href="workshops.html">Workshops</a></li>
-          <li><a href="hotels.html">Venue</a></li>
           <li><a href="keynotes.html">KeyNotes</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
           <li><a href="registration.html">Registration</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="venue.html">Venue</a></li>
+          <li><a href="sponsorship.html">Sponsorship</a></li>
           <li class="buy-tickets"><a target="__blank" href="https://login.easychair.org/account/signin">Submit Paper</a></li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
     </div>
   </header><!-- End Header -->
 
