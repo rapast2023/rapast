@@ -474,6 +474,8 @@ button {
 
 #mobile-nav ul li a {
   color: #fff;
+  opacity: 0.8;
+  font-weight: 600;
   font-size: 17px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
