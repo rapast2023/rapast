@@ -524,6 +524,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+#mobile-nav .dropdown-menu .dropdown-item{
+  color: black;
+  font-weight: 400;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
