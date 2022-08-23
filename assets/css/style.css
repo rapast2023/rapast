@@ -369,7 +369,7 @@ button {
   width: 100%;
 }
 
-.nav-menu li.buy-tickets a {
+.nav-menu li.buy-tickets a, div.buy-tickets {
   color: #fff;
   background: #f82249;
   padding: 7px 22px;
