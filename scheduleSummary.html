@@ -731,13 +731,13 @@ Giancarlo Guizzardi, Joao Paulo A. Almeida, Tiago Prince Sales and Daniele Porel
             let timestringarr = timestring.split(':')
             // create date string to create the date object
             let datestring = 'October ' + timestringarr[0] + ', 2022 ' + timestringarr[1] + ':' + timestringarr[2] + ':00'
-            let date = new Date(datestring)
+            let eledate = new Date(datestring)
             // offset of the location
-            let offset = date.getTimezoneOffset()
+            let offset = eledate.getTimezoneOffset()
             // offset of indiaan standard time
             let istoffset = -330
             // get the utc time first
-            let dateutc = new Date(date.getTime() + istoffset * 60 * 1000)
+            let dateutc = new Date(eledate.getTime() + istoffset * 60 * 1000)
             // create the time for the location from utc time
             let finaldate = new Date(dateutc.getTime() - offset * 60 * 1000)
             // building string to insert into the html tag
@@ -751,7 +751,10 @@ Giancarlo Guizzardi, Joao Paulo A. Almeida, Tiago Prince Sales and Daniele Porel
             }
             var displayString = "" 
             displayString = displayString + hours + ":" + min
-            displayString = '(' + finaldate.getDate().toString() + '/' + finaldate.getMonth().toString() + ') ' + displayString
+            let date = finaldate.getDate().toString()
+            var month = (finaldate.getMonth() + 1)
+            month = month.toString()
+            displayString = '(' + date + '/' + month + ') ' + displayString
             console.log(displayString)
 
             // inserting the dynamic time in the element
