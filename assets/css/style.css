@@ -545,10 +545,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
+  min-height: 100vh;
   height: fit-content;
   background: url(../img/intro-bg.jpeg) bottom center;
   background-size: cover;
-  overflow: hidden;
   position: relative;
   padding: 10px;
 }
